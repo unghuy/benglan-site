@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body {
     max-width: 600px;
   }
