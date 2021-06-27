@@ -2,40 +2,67 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Got Married</title>
+    
+	<link rel="stylesheet" type="text/css" href="./dist/fullpage.min.js" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>BENG LAN <span>My Love Story</span></h1>
-      </header>
+    <div id="fullpage">
+      <div class="show-mobile">
+        <p>Vui lòng lật ngang điện thoại!</p>
+      </div>
+      <div class="section" id="section0">
+        <!-- <div class="container">
+          <header>
+            <h1>BENG LAN <span>My Love Story</span></h1>
+          </header>
+        </div> -->
+        <ul class="slideshow">
+          <li id="slide1">
+            <img src="images/1.1.jpg" alt="">
+            <div><h3>Một câu chuyện</h3></div>
+          </li>
+          <li id="slide1">
+            <img src="images/2.1.jpg" alt="">
+            <div><h3>Một tình yêu</h3></div>
+          </li>
+          <li id="slide1">
+            <img src="images/3.1.jpg" alt="">
+            <div><h3>Nhưng chỉ có một người trong trái tim tôi</h3></div>
+          </li>
+          <li id="slide1">
+            <img src="images/4.1.jpg" alt="">
+            <div><h3>Là...............</h3></div>
+          </li>
+          <li id="slide1">
+            <img src="images/5.1.jpg" alt="">
+            <div><h3>Người đã làm tôi say đắm!!</h3></div>
+          </li>
+          <li id="slide1">
+            <img src="images/6.1.jpg" alt="">
+            <div><h3>Beng Lan</h3></div>
+          </li>
+        </ul>
+      </div>
+      <div class="section section-contain" id="section1">
+        <h1>Kỉ niệm Măng Đen, KonTum</h1>
+      </div>
     </div>
-    <ul class="slideshow">
-      <li>
-        <img src="images/1.1.jpg" alt="">
-        <div><h3>Một câu chuyện</h3></div>
-      </li>
-      <li>
-        <img src="images/2.1.jpg" alt="">
-        <div><h3>Một tình yêu</h3></div>
-      </li>
-      <li>
-        <img src="images/3.1.jpg" alt="">
-        <div><h3>Nhưng chỉ có một người trong trái tim tôi</h3></div>
-      </li>
-      <li>
-        <img src="images/4.1.jpg" alt="">
-        <div><h3>Là...............</h3></div>
-      </li>
-      <li>
-        <img src="images/5.1.jpg" alt="">
-        <div><h3>Người đã làm tôi say đắm!!</h3></div>
-      </li>
-      <li>
-        <img src="images/6.1.jpg" alt="">
-        <div><h3>Beng Lan</h3></div>
-      </li>
-    </ul>
+
+    <script type="text/javascript" src="./dist/fullpage.min.js"></script>
+    <!-- <script type="text/javascript" src="examples.js"></script> -->
+    
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            verticalCentered: false,
+    
+            //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+            css3:false
+        });
+    </script>  
   </body>
 </html>

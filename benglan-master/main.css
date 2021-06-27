@@ -1,3 +1,4 @@
+
 /* CSS reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
 	margin:0;
@@ -33,6 +34,9 @@ a {
 .clr {
   clear: both;
 }
+.show-mobile {
+  display: none;
+}
 
 .container > header {
   padding: 30px 30px 10px 20px;
@@ -67,7 +71,7 @@ p.info {
 }
 
 .slideshow {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 100%;
   top: 0px;
@@ -75,7 +79,7 @@ p.info {
   z-index: 0;
 }
 .slideshow:after {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 100%;
   top: 0px;
@@ -88,7 +92,7 @@ p.info {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 15%;
+  left: 0;
   color: transparent;
   opacity: 0;
   z-index: 0;
@@ -119,7 +123,7 @@ p.info {
   font-size: 80px;
   padding: 0;
   line-height: 200px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(228, 255, 0, 0.8);
 }
 .slideshow li:nth-child(2) img {
   -webkit-animation-delay: 6s;
@@ -135,6 +139,7 @@ p.info {
   -ms-animation-delay: 12s;
   animation-delay: 12s;
 }
+
 .slideshow li:nth-child(4) img {
   -webkit-animation-delay: 18s;
   -moz-animation-delay: 18s;
@@ -156,6 +161,7 @@ p.info {
   -ms-animation-delay: 30s;
   animation-delay: 30s;
 }
+
 .slideshow li:nth-child(2) div {
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
@@ -170,6 +176,7 @@ p.info {
   -ms-animation-delay: 12s;
   animation-delay: 12s;
 }
+
 .slideshow li:nth-child(4) div {
   -webkit-animation-delay: 18s;
   -moz-animation-delay: 18s;
@@ -438,4 +445,52 @@ p.info {
   .slideshow li div h3 {
     font-size: 50px;
   }
+}
+
+
+/* FullPage */
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,
+#section1,
+  #slide1,
+  #slide2 {
+  background-size: cover;
+  background-attachment: fixed;
+}
+#section0 {
+  position: relative;
+}
+
+/* Defining each sectino background and styles
+* --------------------------------------- */
+#section1{
+  background: url(images/8.1.jpg), no-repeat;
+  background-size: cover;
+}
+#section1 h1{
+  top: 20%;
+  font-size: 35px;
+  font-weight: 700;
+  transform: translateY(-50%);
+  position: relative;
+  color: rgba(68, 68, 68, 0.9);
+}
+/* #section2{
+  background-image: url(imgs/bg3.jpg);
+  padding: 6% 0 0 0;
+}
+#section3{
+  background-image: url(imgs/bg4.jpg);
+  padding: 6% 0 0 0;
+}
+#section3 h1{
+  color: #000;
+} */
+
+/* End FullPage */
+
+.section-contain {
+  margin-top: 60px;
 }
